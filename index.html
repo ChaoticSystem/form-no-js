@@ -1,0 +1,67 @@
+	<style>
+	
+	#login {
+			display: inline-block;
+			position: relative;
+			width: 100%;
+			
+		}
+		#login:after {
+			display: none;
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			cursor: default;
+			
+		}
+		#login input {
+			cursor: pointer;
+			margin-top:20% !important
+		}
+		#user:placeholder-shown ~ * #login input,
+		#pass:placeholder-shown ~ * #login input,
+		#user:invalid ~ * #login input,
+		#pass:invalid ~ * #login input {
+
+			 margin-top:20%!important;
+			 color: #989898 !important;
+             background-color: #fff199;
+             border-color: #fff199;
+		}
+		
+		#user:placeholder-shown ~ * #login:after,
+		#pass:placeholder-shown ~ * #login:after,
+		#user:invalid ~ * #login:after,
+		#pass:invalid ~ * #login:after {
+			display: block;
+			margin-top:20% !important
+		
+	 	}
+		</style>
+		
+		
+	                                     
+                                                     <label>Usuario</label>
+                                                     <input id="user" name="user" minlength="1"  type="text" placeholder="email"    maxlength="64" >
+                                                     <label >Contraseña</label>
+                                                     <input id="pass" name="pass"  minlength="1" type="text" placeholder="email2"   maxlength="16">
+                                                     <div>
+				                                         <div id="login">
+				                                          <input id="login-btn" name="login" type="submit" value="Ingresar"  >
+				                                           </div>
+			                                         </div>
+				
+                                                    
+                                                  
+                                                  
+                                                 
+                                                 
+												 
+											
+												 
+												 
+                                                 
+                                                     
